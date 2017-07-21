@@ -1,0 +1,31 @@
+<h1>Games</h1>
+
+
+<form action="/game" method="post">
+    <button name="foo" value="upvote">New game</button>
+</form>
+<form action="/game" method="post">
+    <input type="number" name="number">
+    <input type="submit" name="New Multiplayergame!"></input>
+</form>
+
+<p>
+<a href="/posts?status=progress">View in-progress</a>
+<a href="/posts?status=over">View finished games</a>
+</p>
+
+<!-- YOUR CODE HERE -->
+{{#each filteredGames}}
+<article>
+  <a href="/game/{{id}}">
+  <h2>{{id}}</h2>
+</a>
+  <p>{{status}}</p>
+</article>
+<hr />
+{{/each}}
+
+<div class="session">
+<p> You are currently logged in as {{user.username}} </p>
+<a href="/logout"> Logout</a>
+</div>

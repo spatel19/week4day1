@@ -1,0 +1,130 @@
+body {
+/*   padding-top: 120px; */
+  background: #cc0033;
+}
+
+/* Date of birth (required): validate that the user is over 13 years old
+Place of birth (optional)
+Password (required): password must be at least 6 characters long,
+Password repeat (required): should be same as the password field
+User registration date (required): set this via JavaScript as a hidden form field
+Gender (required): Male/Female/Rather not say (radio selector)
+Sign up for newsletter: Checkbox
+Bio: textarea */
+
+.registration-app {
+/*   display: flex; */
+  justify-content: space-around;
+}
+
+.registration-app > .card {
+  margin-bottom: 2em;
+}
+
+.card {
+/*   padding: 10px 0; */
+/*   border: 1px solid #333; */
+  margin: 0 auto;
+  position: relative;
+  
+  width: 300px;
+  font-family: "Open Sans", "Tahoma", "sans-serif";
+  background-color: -webkit-linear-gradient(to bottom, #eee, #dedede 90%);
+  background-color: #eee;
+/*   background: linear-gradient(to bottom, #eee , #dedede 90%); */
+}
+
+.card-height-fix {
+  height: 0%;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 25px -10px #333;
+}
+
+.card-round {
+  border-radius: 10px;
+}
+
+.card-header, .card-body, .card-footer {
+  padding: 1em;
+}
+
+.card-header {
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card-body {
+  font-family: inherit;
+  color: #333;
+}
+
+.card a {
+  padding: 0;
+  font-size: 12px;
+  font-family: Open Sans;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1b98f8;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card form {
+  width: 100%;
+}
+
+.card-form input[type], .card-form textarea {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: calc(100% - 0px);
+  
+  height: 59px;
+  border-top: 0px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  
+  font-size: 18px;
+  text-indent: 1em;
+}
+
+.card-form input[type]:focus, .card-form textarea:focus {
+  position: relative;
+  max-width: 100%;
+}
+
+.card-form > .inline-form {
+  margin-top: 0;
+  display: flex;
+}
+
+.inline-form > input[type] {
+  border-right: 1px solid #ddd;
+}
+
+.card-form button {
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #cc0033;
+  border: 0;
+  
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Open Sans; 
+  font-weight: 600;
+  font-size: 16px;
+  margin: 1em 0;
+}
+
+.card-form button:hover {
+  background: #ec2053;
+}

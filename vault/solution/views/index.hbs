@@ -1,0 +1,18 @@
+<h1>Welcome to the top secret data service.</h1>
+So far you've said:
+<ul>
+  {{#each messages}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+<form method="POST">
+  <div class="form-group">
+    <label>Add something</label>
+    <input type="text" name="message" class="form-control">
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>
+<p>
+  <br>
+  <a href="/logout">Logout</a>
+</p>
